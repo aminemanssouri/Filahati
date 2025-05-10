@@ -17,6 +17,11 @@ module.exports = (sequelize, DataTypes) => {
       Product.belongsTo(models.Unites, { foreignKey: 'uniteId' });
       Product.hasMany(models.Review, { foreignKey: 'productId' });
       Product.hasMany(models.Image, { foreignKey: 'productId' });
+      Product.belongsToMany(models.Tag, {
+        through: 'ProductTag',
+        foreignKey: 'productId',
+        otherKey: 'tagId'
+      });
     }
   }
   Product.init({
@@ -79,14 +84,6 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT,
       allowNull: true
     },
-    imageId: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: 'Images',
-        key: 'imageId'
-      }
-    },
     Organic: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
@@ -122,6 +119,12 @@ module.exports = (sequelize, DataTypes) => {
         model: 'Producers',
         key: 'id'
       }
+    },
+    status: {
+      type: DataTypes.ENUM('Active', 'Low Stock', 'Out of Stock'),
+      allowNull: false,
+      defaultValue: 'Active',
+      comment: 'Product availability status'
     }
   }, {
     sequelize,

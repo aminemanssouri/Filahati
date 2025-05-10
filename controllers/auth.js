@@ -133,7 +133,7 @@ const register = async (req, res) => {
     // Create token
     const age = 1000 * 60 * 60 * 24 * 14; // 2 weeks
     const token = jwt.sign(
-      { id: newUser.id },
+      { id: newUser.id,role:newUser.role },
       process.env.JWT_SECRET_KEY,
       { expiresIn: age }
     );

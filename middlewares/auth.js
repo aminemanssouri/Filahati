@@ -24,6 +24,7 @@ const verifyToken = async (req, res, next) => {
       
       // Add user ID to request object
       req.userId = payload.id;
+      req.userRole = payload.role;
       next();
     });
   } catch (error) {

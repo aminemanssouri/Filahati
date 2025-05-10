@@ -8,5 +8,8 @@ router.get('/test', (req, res) => {
 
 // Auth Routes
 router.use('/auth', require('../routes/authRoutes'));
+// Products Routes
+router.use('/products', require('../routes/products'));
+
 
 module.exports = router;
