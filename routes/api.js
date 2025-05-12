@@ -18,4 +18,10 @@ router.use('/orders', require('../routes/orders'));
 // Shipping Address Routes
 router.use('/shipping-addresses', require('../routes/shippingAddresses'));
 
+// Cart Routes
+router.use('/cart', require('../routes/cart'));
+
+// Payment Routes
+router.use('/payments', require('../routes/payments'));
+
 module.exports = router;

@@ -188,6 +188,38 @@ filahati-api/
 }
 ```
 
+## 💳 Payment System
+
+### ✨ Features
+
+- **Secure Payment Processing**: Process payments for orders with various payment methods
+- **Payment Status Tracking**: Monitor payment status (Pending, Processing, Completed, Failed, Refunded)
+- **Transaction Management**: Track payment transactions with unique transaction IDs
+- **Payment History**: View payment history for orders
+- **Payment Gateway Integration**: Placeholder for integration with real payment gateways
+
+### 🔌 Payment Endpoints
+
+- POST `/api/payments` - Process a new payment for an order (buyers only)
+- GET `/api/payments/:paymentId` - Get payment details by ID (buyers only)
+- GET `/api/payments/order/:orderId` - Get all payments for a specific order (buyers only)
+- PATCH `/api/payments/:paymentId/status` - Update payment status (webhook callback)
+
+### 💾 Payment Model
+
+```json
+{
+  "paymentId": "integer",
+  "orderId": "integer",
+  "amount": "decimal",
+  "paymentMethod": "enum", // 'Credit Card', 'Debit Card', 'PayPal', 'Bank Transfer', 'Cash on Delivery'
+  "paymentStatus": "enum", // 'Pending', 'Processing', 'Completed', 'Failed', 'Refunded'
+  "transactionId": "string",
+  "paymentDate": "date",
+  "paymentDetails": "json"
+}
+```
+
 ## 🛒 Order Management System
 
 ### ✨ Features
