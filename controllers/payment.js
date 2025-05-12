@@ -203,9 +203,56 @@ const updatePaymentStatus = async (req, res) => {
   }
 };
 
+/**
+ * Get transactions by order ID
+ * @param {Object} req - Express request object
+ * @param {Object} res - Express response object
+ */
+const getTransactionsByOrderId = async (req, res) => {
+  try {
+    const { orderId } = req.params;
+    
+    // Check if order exists
+    const order = await Order.findByPk(orderId);
+    if (!order) {
+      return res.status(404).json({ 
+        success: false, 
+        message: 'Order not found' 
+      });
+    }
+    
+    // Check if order belongs to the authenticated user
+    if (order.buyerId !== req.user.buyerId) {
+      return res.status(403).json({ 
+        success: false, 
+        message: 'You are not authorized to view transactions for this order' 
+      });
+    }
+    
+    const { Transaction } = require('../models');
+    const transactions = await Transaction.findAll({
+      where: { orderId },
+      order: [['transactionDate', 'DESC']]
+    });
+    
+    return res.status(200).json({
+      success: true,
+      transactions
+    });
+  } catch (error) {
+    console.error('Error getting transactions:', error);
+    return res.status(500).json({ 
+      success: false, 
+      message: 'Failed to get transactions', 
+      error: error.message 
+    });
+  }
+};
+
 module.exports = {
   createPayment,
   getPaymentById,
   getPaymentsByOrderId,
-  updatePaymentStatus
+  updatePaymentStatus,
+  getTransactionsByOrderId
 };

@@ -15,6 +15,9 @@ router.get('/:paymentId', authMiddleware.isBuyer, paymentController.getPaymentBy
 // Get payments by order ID
 router.get('/order/:orderId', authMiddleware.isBuyer, paymentController.getPaymentsByOrderId);
 
+// Get transactions by order ID
+router.get('/transactions/order/:orderId', authMiddleware.isBuyer, paymentController.getTransactionsByOrderId);
+
 // Update payment status (for webhook callbacks from payment gateways)
 // Note: In a production environment, this endpoint should be secured with API keys or signatures
 router.patch('/:paymentId/status', paymentController.updatePaymentStatus);

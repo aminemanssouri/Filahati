@@ -120,6 +120,17 @@ const processPayment = async (paymentData) => {
     `TXN_${Date.now()}_${Math.floor(Math.random() * 1000000)}` : 
     null;
   
+  // Record the transaction if successful
+  if (isSuccessful && transactionId) {
+    await recordTransaction({
+      orderId: paymentData.orderId,
+      amount: paymentData.amount,
+      transactionId,
+      paymentMethod: paymentData.paymentMethod,
+      paymentDetails: paymentData.paymentDetails || {}
+    });
+  }
+  
   return {
     success: isSuccessful,
     transactionId,
@@ -128,10 +139,49 @@ const processPayment = async (paymentData) => {
   };
 };
 
+/**
+ * Record a transaction in the database
+ * @param {Object} transactionData - Transaction data to record
+ * @param {string} transactionData.orderId - Order ID
+ * @param {number} transactionData.amount - Transaction amount
+ * @param {string} transactionData.transactionId - Transaction ID from payment provider
+ * @param {string} transactionData.paymentMethod - Payment method used
+ * @param {Object} transactionData.paymentDetails - Additional payment details
+ * @returns {Promise<Object>} Recorded transaction
+ */
+const recordTransaction = async (transactionData) => {
+  const { Transaction } = require('../models');
+  const transaction = await sequelize.transaction();
+  
+  try {
+    // Create transaction record
+    const newTransaction = await Transaction.create({
+      orderId: transactionData.orderId,
+      amount: transactionData.amount,
+      externalTransactionId: transactionData.transactionId,
+      paymentMethod: transactionData.paymentMethod,
+      transactionDate: new Date(),
+      transactionType: 'Payment',
+      status: 'Completed',
+      details: transactionData.paymentDetails
+    }, { transaction });
+    
+    await transaction.commit();
+    return newTransaction;
+  } catch (error) {
+    await transaction.rollback();
+    console.error('Error recording transaction:', error);
+    // We don't throw the error here to prevent payment processing from failing
+    // just because transaction recording failed
+    return null;
+  }
+};
+
 module.exports = {
   createPayment,
   getPaymentById,
   getPaymentsByOrderId,
   updatePaymentStatus,
-  processPayment
+  processPayment,
+  recordTransaction
 };

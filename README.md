@@ -197,12 +197,14 @@ filahati-api/
 - **Transaction Management**: Track payment transactions with unique transaction IDs
 - **Payment History**: View payment history for orders
 - **Payment Gateway Integration**: Placeholder for integration with real payment gateways
+- **Transaction Audit Trail**: Complete record of all payment transactions for auditing and reconciliation
 
 ### 🔌 Payment Endpoints
 
 - POST `/api/payments` - Process a new payment for an order (buyers only)
 - GET `/api/payments/:paymentId` - Get payment details by ID (buyers only)
 - GET `/api/payments/order/:orderId` - Get all payments for a specific order (buyers only)
+- GET `/api/payments/transactions/order/:orderId` - Get all transactions for a specific order (buyers only)
 - PATCH `/api/payments/:paymentId/status` - Update payment status (webhook callback)
 
 ### 💾 Payment Model
@@ -217,6 +219,22 @@ filahati-api/
   "transactionId": "string",
   "paymentDate": "date",
   "paymentDetails": "json"
+}
+```
+
+### 💸 Transaction Model
+
+```json
+{
+  "transactionId": "integer",
+  "orderId": "integer",
+  "amount": "decimal",
+  "externalTransactionId": "string",
+  "paymentMethod": "enum", // 'Credit Card', 'Debit Card', 'PayPal', 'Bank Transfer', 'Cash on Delivery'
+  "transactionDate": "date",
+  "transactionType": "enum", // 'Payment', 'Refund', 'Chargeback'
+  "status": "enum", // 'Pending', 'Completed', 'Failed'
+  "details": "json"
 }
 ```
 
