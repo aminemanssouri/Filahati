@@ -1,8 +1,8 @@
-# Filahati API
+# 🌱 Filahati API
 
 Backend API for the Filahati project built with Express.js and PostgreSQL.
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 filahati-api/
@@ -23,14 +23,14 @@ filahati-api/
 └── server.js           # Entry point
 ```
 
-## Getting Started
+## 🚀 Getting Started
 
-### Prerequisites
+### 📋 Prerequisites
 
 - Node.js (v14 or higher)
 - MongoDB (local or Atlas)
 
-### Installation
+### ⚙️ Installation
 
 1. Install dependencies:
    ```
@@ -50,18 +50,18 @@ filahati-api/
    npm start
    ```
 
-## API Endpoints
+## 🔌 API Endpoints
 
-### Test Route
+### 🧪 Test Route
 - GET `/api/test` - Test if API is working
 
-### Authentication Routes
+### 🔐 Authentication Routes
 - POST `/api/auth/register` - Register a new user (buyer or producer)
 - POST `/api/auth/login` - Authenticate user & get token
 - POST `/api/auth/logout` - Logout user & clear cookie
 - GET `/api/auth/me` - Get current user profile
 
-### Product Routes
+### 🛒 Product Routes
 - POST `/api/products` - Create a new product (producers only)
 - GET `/api/products/:id` - Get a product by ID
 - GET `/api/products/producer/:producerId` - Get all products by a specific producer
@@ -69,9 +69,9 @@ filahati-api/
 - PUT `/api/products/:id` - Update a product (producers only)
 - DELETE `/api/products/:id` - Delete a product (producers only)
 
-## Data Models
+## 💾 Data Models
 
-### User
+### 👤 User
 ```json
 {
   "id": "integer",
@@ -142,7 +142,7 @@ filahati-api/
 }
 ```
 
-### ShippingAddress
+### 📦 ShippingAddress
 ```json
 {
   "id": "integer",
@@ -174,7 +174,7 @@ filahati-api/
 }
 ```
 
-### OrderItem
+### 📋 OrderItem
 ```json
 {
   "id": "integer",
@@ -188,9 +188,9 @@ filahati-api/
 }
 ```
 
-## Order Management System
+## 🛒 Order Management System
 
-### Features
+### ✨ Features
 
 - **Complete Order Lifecycle Management**: Create, track, update, and cancel orders
 - **Multi-party Access**: Different views for buyers and producers
@@ -198,45 +198,45 @@ filahati-api/
 - **Order Status Tracking**: Track orders through their entire lifecycle
 - **Payment Status Tracking**: Monitor payment status for each order
 
-### Order Endpoints
+### 🔌 Order Endpoints
 
-#### Buyer Order Endpoints
+#### 🛍️ Buyer Order Endpoints
 - POST `/api/orders` - Create a new order (buyers only)
 - GET `/api/orders/:id` - Get an order by ID
 - GET `/api/orders/my` - Get all orders for the authenticated buyer
 - PUT `/api/orders/:id/cancel` - Cancel an order (buyers only)
 
-#### Shipping Address Endpoints
+#### 📦 Shipping Address Endpoints
 - POST `/api/shipping-addresses` - Create a new shipping address
 - GET `/api/shipping-addresses/my` - Get all shipping addresses for the authenticated buyer
 
-#### Producer Order Endpoints
+#### 🧑‍🌾 Producer Order Endpoints
 - GET `/api/orders/producer` - Get all orders containing the authenticated producer's products
 - PUT `/api/orders/:id/status` - Update order status (producers only)
 
-### Order Workflow
+### 🔄 Order Workflow
 
-1. **Order Creation**:
+1. **📝 Order Creation**:
    - Buyer selects products and quantities
    - Buyer chooses or creates a shipping address
    - System calculates total amount including shipping
    - Order is created with 'Pending' status
 
-2. **Order Processing**:
+2. **⚙️ Order Processing**:
    - Producer receives notification of new order
    - Producer updates order status to 'Processing'
    - Producer prepares products for shipping
 
-3. **Order Shipping**:
+3. **🚚 Order Shipping**:
    - Producer ships the order
    - Order status is updated to 'Shipped'
    - Buyer receives shipping notification
 
-4. **Order Delivery**:
+4. **📬 Order Delivery**:
    - Order is delivered to the buyer
    - Status is updated to 'Delivered'
    - Buyer can leave reviews for products
 
-## License
+## 📄 License
 
 ISC
