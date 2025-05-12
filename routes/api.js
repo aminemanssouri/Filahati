@@ -8,8 +8,14 @@ router.get('/test', (req, res) => {
 
 // Auth Routes
 router.use('/auth', require('../routes/authRoutes'));
+
 // Products Routes
 router.use('/products', require('../routes/products'));
 
+// Order Routes
+router.use('/orders', require('../routes/orders'));
+
+// Shipping Address Routes
+router.use('/shipping-addresses', require('../routes/shippingAddresses'));
 
 module.exports = router;

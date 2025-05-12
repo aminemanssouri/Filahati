@@ -122,6 +122,121 @@ filahati-api/
 }
 ```
 
+### Buyer
+```json
+{
+  "id": "integer",
+  "businessType": "string",
+  "businessName": "string",
+  "website": "string",
+  "languagePreference": "string",
+  "bookingNotification": "boolean",
+  "emailNotification": "boolean",
+  "smsNotification": "boolean",
+  "orderUpdates": "boolean",
+  "newProductNotification": "boolean",
+  "promotionsOffers": "boolean",
+  "userId": "integer",
+  "shippingAddressId": "integer",
+  "cityId": "integer"
+}
+```
+
+### ShippingAddress
+```json
+{
+  "id": "integer",
+  "addressLine1": "string",
+  "addressLine2": "string",
+  "postalCode": "string",
+  "contactNumber": "string",
+  "contactName": "string",
+  "isDefault": "boolean",
+  "cityId": "integer",
+  "buyerId": "integer"
+}
+```
+
+### Order
+```json
+{
+  "orderId": "integer",
+  "buyerId": "integer",
+  "shippingAddressId": "integer",
+  "orderDate": "date",
+  "totalAmount": "decimal",
+  "status": "enum", // 'Pending', 'Processing', 'Shipped', 'Delivered', 'Cancelled'
+  "paymentMethod": "string",
+  "paymentStatus": "enum", // 'Pending', 'Completed', 'Failed', 'Refunded'
+  "shippingCost": "decimal",
+  "deliveryDate": "date",
+  "notes": "text"
+}
+```
+
+### OrderItem
+```json
+{
+  "id": "integer",
+  "orderId": "integer",
+  "productId": "integer",
+  "quantity": "integer",
+  "unitPrice": "decimal",
+  "subtotal": "decimal",
+  "producerNotes": "text",
+  "buyerNotes": "text"
+}
+```
+
+## Order Management System
+
+### Features
+
+- **Complete Order Lifecycle Management**: Create, track, update, and cancel orders
+- **Multi-party Access**: Different views for buyers and producers
+- **Shipping Address Management**: Create and manage multiple shipping addresses
+- **Order Status Tracking**: Track orders through their entire lifecycle
+- **Payment Status Tracking**: Monitor payment status for each order
+
+### Order Endpoints
+
+#### Buyer Order Endpoints
+- POST `/api/orders` - Create a new order (buyers only)
+- GET `/api/orders/:id` - Get an order by ID
+- GET `/api/orders/my` - Get all orders for the authenticated buyer
+- PUT `/api/orders/:id/cancel` - Cancel an order (buyers only)
+
+#### Shipping Address Endpoints
+- POST `/api/shipping-addresses` - Create a new shipping address
+- GET `/api/shipping-addresses/my` - Get all shipping addresses for the authenticated buyer
+
+#### Producer Order Endpoints
+- GET `/api/orders/producer` - Get all orders containing the authenticated producer's products
+- PUT `/api/orders/:id/status` - Update order status (producers only)
+
+### Order Workflow
+
+1. **Order Creation**:
+   - Buyer selects products and quantities
+   - Buyer chooses or creates a shipping address
+   - System calculates total amount including shipping
+   - Order is created with 'Pending' status
+
+2. **Order Processing**:
+   - Producer receives notification of new order
+   - Producer updates order status to 'Processing'
+   - Producer prepares products for shipping
+
+3. **Order Shipping**:
+   - Producer ships the order
+   - Order status is updated to 'Shipped'
+   - Buyer receives shipping notification
+
+4. **Order Delivery**:
+   - Order is delivered to the buyer
+   - Status is updated to 'Delivered'
+   - Buyer can leave reviews for products
+
 ## License
 
 ISC
