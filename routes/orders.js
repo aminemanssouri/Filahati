@@ -18,25 +18,25 @@ const { verifyToken } = require('../middlewares/auth');
 router.post('/', verifyToken, createOrder);
 
 /**
- * @route   GET /api/orders/:id
- * @desc    Get an order by ID
- * @access  Private (Order's buyer or producer of products in the order)
- */
-router.get('/:id', verifyToken, getOrderById);
-
-/**
- * @route   GET /api/orders/my
+ * @route   GET /api/orders/myOrders
  * @desc    Get all orders for the authenticated buyer
  * @access  Private (Buyers only)
  */
 router.get('/myOrders', verifyToken, getMyOrders);
 
 /**
- * @route   GET /api/orders/producer
+ * @route   GET /api/orders/producerOrders
  * @desc    Get all orders containing the authenticated producer's products
  * @access  Private (Producers only)
  */
 router.get('/producerOrders', verifyToken, getProducerOrders);
+
+/**
+ * @route   GET /api/orders/:id
+ * @desc    Get an order by ID
+ * @access  Private (Order's buyer or producer of products in the order)
+ */
+router.get('/:id', verifyToken, getOrderById);
 
 /**
  * @route   PUT /api/orders/:id/status

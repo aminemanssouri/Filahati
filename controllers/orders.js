@@ -61,7 +61,17 @@ const createOrder = async (req, res) => {
  */
 const getOrderById = async (req, res) => {
   try {
-    const orderId = parseInt(req.params.id);
+    // Validate and parse the order ID
+    const orderId = req.params.id && !isNaN(parseInt(req.params.id)) ? parseInt(req.params.id) : null;
+    
+    // Check if orderId is valid
+    if (!orderId) {
+      return res.status(400).json({
+        success: false,
+        message: 'Invalid order ID'
+      });
+    }
+    
     const userId = req.userId;
     
     
@@ -256,7 +266,17 @@ const updateOrderStatus = async (req, res) => {
  */
 const cancelOrder = async (req, res) => {
   try {
-    const orderId = parseInt(req.params.id);
+    // Validate and parse the order ID
+    const orderId = req.params.id && !isNaN(parseInt(req.params.id)) ? parseInt(req.params.id) : null;
+    
+    // Check if orderId is valid
+    if (!orderId) {
+      return res.status(400).json({
+        success: false,
+        message: 'Invalid order ID'
+      });
+    }
+    
     const userId = req.userId;
     const userRole = req.userRole;
     

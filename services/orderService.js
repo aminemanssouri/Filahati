@@ -219,7 +219,13 @@ const createOrder = async (orderData, buyerId) => {
  */
 const getOrderById = async (orderId, buyerId = null) => {
   try {
-    const whereClause = { orderId };
+    // Validate orderId is a number
+    if (!orderId || isNaN(parseInt(orderId))) {
+      return { success: false, message: 'Invalid order ID' };
+    }
+    
+    const parsedOrderId = parseInt(orderId);
+    const whereClause = { orderId: parsedOrderId };
     if (buyerId) {
       whereClause.buyerId = buyerId;
     }
@@ -232,14 +238,14 @@ const getOrderById = async (orderId, buyerId = null) => {
           include: [{
             model: Product,
             include: [
-              { model: Producer, attributes: ['id', 'businessName', 'contactEmail'] },
+              { model: Producer, attributes: ['id'] },
               { model: Image }
             ]
           }]
         },
         {
           model: ShippingAddress,
-          include: [{ model: City, attributes: ['id', 'name'] }]
+          include: [{ model: City, attributes: ['id', 'cityName'] }]
         },
         { model: Buyer }
       ]
@@ -263,8 +269,9 @@ const getOrderById = async (orderId, buyerId = null) => {
  */
 const getBuyerOrders = async (buyerId, options = {}) => {
   try {
-    const page = parseInt(options.page) || 1;
-    const limit = parseInt(options.limit) || 10;
+    // Ensure we have valid numeric values for pagination
+    const page = options.page && !isNaN(parseInt(options.page)) ? parseInt(options.page) : 1;
+    const limit = options.limit && !isNaN(parseInt(options.limit)) ? parseInt(options.limit) : 10;
     const offset = (page - 1) * limit;
     
     // Build where clause
@@ -286,14 +293,14 @@ const getBuyerOrders = async (buyerId, options = {}) => {
           model: OrderItem,
           include: [{
             model: Product,
-            attributes: ['ProductsId', 'name', 'price'],
+            attributes: ['ProductsId', 'title', 'price'],
             include: [{ model: Image }]
           }]
         },
         {
           model: ShippingAddress,
           attributes: ['id', 'contactName', 'addressLine1', 'postalCode'],
-          include: [{ model: City, attributes: ['id', 'name'] }]
+          include: [{ model: City, attributes: ['id', 'cityName'] }]
         }
       ]
     });
@@ -412,10 +419,5 @@ module.exports = {
   getOrderById,
   getBuyerOrders,
   updateOrderStatus,
-  cancelOrder,
-  createShippingAddress,
-  getBuyerShippingAddresses,
-  updateShippingAddress,
-  deleteShippingAddress,
-  setDefaultShippingAddress
+  cancelOrder
 };
