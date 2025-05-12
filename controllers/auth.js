@@ -28,7 +28,7 @@ const login = async (req, res) => {
     // Create token (2 weeks expiration)
     const age = 1000 * 60 * 60 * 24 * 14;
     const token = jwt.sign(
-      { id: user.id },
+      { id: user.id ,role:user.role},
       process.env.JWT_SECRET_KEY, // Fixed typo: WT_SECRET_KEY -> JWT_SECRET_KEY
       { expiresIn: age }
     );

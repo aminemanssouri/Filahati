@@ -1,22 +1,22 @@
 const express = require('express');
 const router = express.Router();
 const paymentController = require('../controllers/payment');
-const authMiddleware = require('../middleware/authMiddleware');
+const {verifyToken} = require('../middlewares/auth');
 
 // All payment routes require authentication
-router.use(authMiddleware.authenticateToken);
+router.use(verifyToken);
 
 // Create a new payment
-router.post('/', authMiddleware.isBuyer, paymentController.createPayment);
+router.post('/', paymentController.createPayment);
 
 // Get payment by ID
-router.get('/:paymentId', authMiddleware.isBuyer, paymentController.getPaymentById);
+router.get('/:paymentId', paymentController.getPaymentById);
 
 // Get payments by order ID
-router.get('/order/:orderId', authMiddleware.isBuyer, paymentController.getPaymentsByOrderId);
+router.get('/order/:orderId', paymentController.getPaymentsByOrderId);
 
 // Get transactions by order ID
-router.get('/transactions/order/:orderId', authMiddleware.isBuyer, paymentController.getTransactionsByOrderId);
+router.get('/transactions/order/:orderId', paymentController.getTransactionsByOrderId);
 
 // Update payment status (for webhook callbacks from payment gateways)
 // Note: In a production environment, this endpoint should be secured with API keys or signatures

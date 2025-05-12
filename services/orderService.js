@@ -71,30 +71,11 @@ const getBuyerByUserId = async (userId) => {
   }
 };
 
-/**
- * Get shipping address by ID and verify it belongs to the buyer
- * @param {number} shippingAddressId - Shipping address ID
- * @param {number} buyerId - Buyer ID for verification
- * @returns {Promise<Object>} - Object containing success status and shipping address or error message
- */
+// This function has been moved to shippingAddressService.js
+// Keeping a reference here to maintain backward compatibility
 const getShippingAddressById = async (shippingAddressId, buyerId) => {
-  try {
-    const address = await ShippingAddress.findOne({
-      where: { 
-        id: shippingAddressId,
-        buyerId 
-      },
-      include: [{ model: City, attributes: ['id', 'name'] }]
-    });
-    
-    if (!address) {
-      return { success: false, message: "Shipping address not found or does not belong to this buyer" };
-    }
-    
-    return { success: true, address };
-  } catch (error) {
-    return { success: false, message: "Error finding shipping address: " + error.message };
-  }
+  const shippingAddressService = require('./shippingAddressService');
+  return await shippingAddressService.getShippingAddressById(shippingAddressId, buyerId);
 };
 
 /**
@@ -420,6 +401,7 @@ const cancelOrder = async (orderId, buyerId) => {
   }
 };
 
+
 module.exports = {
   validateOrderData,
   getBuyerByUserId,
@@ -430,6 +412,10 @@ module.exports = {
   getOrderById,
   getBuyerOrders,
   updateOrderStatus,
-  cancelOrder
+  cancelOrder,
+  createShippingAddress,
+  getBuyerShippingAddresses,
+  updateShippingAddress,
+  deleteShippingAddress,
+  setDefaultShippingAddress
 };
-

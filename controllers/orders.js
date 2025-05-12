@@ -1,4 +1,5 @@
 const orderService = require('../services/orderService');
+const shippingAddressService = require('../services/shippingAddressService');
 
 /**
  * Create a new order
@@ -331,7 +332,7 @@ const createShippingAddress = async (req, res) => {
     
     // Create shipping address
     const addressData = req.body;
-    const address = await orderService.createShippingAddress(addressData, buyerResult.buyerId);
+    const address = await shippingAddressService.createShippingAddress(addressData, buyerResult.buyerId);
     
     return res.status(201).json({
       success: true,
@@ -376,7 +377,7 @@ const getMyShippingAddresses = async (req, res) => {
     }
     
     // Get shipping addresses
-    const addresses = await orderService.getBuyerShippingAddresses(buyerResult.buyerId);
+    const addresses = await shippingAddressService.getBuyerShippingAddresses(buyerResult.buyerId);
     
     return res.status(200).json({
       success: true,
