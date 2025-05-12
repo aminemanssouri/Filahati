@@ -62,6 +62,14 @@ module.exports = (sequelize, DataTypes) => {
         key: 'id'
       }
     },
+    shippingAddressId:{
+      type: DataTypes.INTEGER,
+      allowNull: true, // Making it nullable to match the migration
+      references: {
+        model: 'ShippingAddresses', // Corrected table name
+        key: 'id'
+      }
+    },
     cityId :{
         type: DataTypes.INTEGER,
       allowNull: true,
