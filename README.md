@@ -223,7 +223,6 @@ filahati-api/
 ```
 
 ### 💸 Transaction Model
-
 ```json
 {
   "transactionId": "integer",
@@ -395,6 +394,253 @@ filahati-api/
 }
 ```
 
-## 📄 License
+## � Order Management System
+
+### ✨ Features
+
+- **Complete Order Lifecycle Management**: Create, track, update, and cancel orders
+- **Multi-party Access**: Different views for buyers and producers
+- **Shipping Address Management**: Create and manage multiple shipping addresses
+- **Order Status Tracking**: Track orders through their entire lifecycle
+- **Payment Status Tracking**: Monitor payment status for each order
+
+### 🔌 Order Endpoints
+
+#### 🛍️ Buyer Order Endpoints
+- POST `/api/orders` - Create a new order (buyers only)
+- GET `/api/orders/:id` - Get an order by ID
+- GET `/api/orders/my` - Get all orders for the authenticated buyer
+- PUT `/api/orders/:id/cancel` - Cancel an order (buyers only)
+
+#### 📦 Shipping Address Endpoints
+- POST `/api/shipping-addresses` - Create a new shipping address
+- GET `/api/shipping-addresses/my` - Get all shipping addresses for the authenticated buyer
+- GET `/api/shipping-addresses/:id` - Get a specific shipping address by ID
+- PUT `/api/shipping-addresses/:id` - Update a shipping address
+- DELETE `/api/shipping-addresses/:id` - Delete a shipping address
+- PUT `/api/shipping-addresses/:id/default` - Set a shipping address as default
+
+#### 🧑‍🌾 Producer Order Endpoints
+- GET `/api/orders/producer` - Get all orders containing the authenticated producer's products
+- PUT `/api/orders/:id/status` - Update order status (producers only)
+
+### 🔄 Order Workflow
+
+1. **📝 Order Creation**:
+   - Buyer selects products and quantities
+   - Buyer chooses or creates a shipping address
+   - System calculates total amount including shipping
+   - Order is created with 'Pending' status
+
+2. **⚙️ Order Processing**:
+   - Producer receives notification of new order
+   - Producer updates order status to 'Processing'
+   - Producer prepares products for shipping
+
+3. **🚚 Order Shipping**:
+   - Producer ships the order
+   - Order status is updated to 'Shipped'
+   - Buyer receives shipping notification
+
+4. **📬 Order Delivery**:
+   - Order is delivered to the buyer
+   - Status is updated to 'Delivered'
+   - Buyer can leave reviews for products
+
+## 📦 Shipping Address Management System
+
+### ✨ Features
+
+- **Multiple Addresses**: Buyers can save and manage multiple shipping addresses
+- **Default Address Selection**: Set a preferred address as default for faster checkout
+- **Address Validation**: Basic validation for required fields
+- **City Integration**: Addresses are linked to cities for regional organization
+- **Secure Access Control**: Only the address owner can view, edit, or delete their addresses
+- **Seamless Order Integration**: Addresses can be selected during order creation
+
+### 🔄 Address Management Workflow
+
+1. **📝 Address Creation**:
+   - Buyer provides address details (contact name, address lines, postal code, etc.)
+   - System validates the address information
+   - Address is saved to the buyer's profile
+   - First address is automatically set as default
+
+2. **🔄 Address Updates**:
+   - Buyer can update any address details
+   - Changes are immediately reflected in the system
+   - Updated addresses can be used for new orders
+
+3. **⭐ Default Address Management**:
+   - Buyer can set any address as default
+   - Previous default address is automatically unset
+   - Default address is pre-selected during checkout
+
+4. **🗑️ Address Deletion**:
+   - Buyer can delete unwanted addresses
+   - System prevents deletion of addresses used in active orders
+   - If default address is deleted, another address is set as default if available
+
+### 💾 Example Shipping Address Creation
+
+```json
+{
+  "contactName": "John Doe",
+  "addressLine1": "123 Main Street",
+  "addressLine2": "Apt 4B",
+  "postalCode": "10001",
+  "contactNumber": "+1234567890",
+  "cityId": 5,
+  "isDefault": true
+}
+```
+
+## 💰 Transaction Management System
+
+### ✨ Features
+
+- **Secure Payment Tracking**: Track all payment transactions with unique transaction IDs
+- **Order Integration**: Transactions are linked directly to orders for complete financial tracking
+- **Multiple Payment Methods**: Support for various payment methods (Credit Card, Debit Card, PayPal, etc.)
+- **Transaction Status Monitoring**: Track the status of each transaction (Pending, Completed, Failed)
+- **Transaction Types**: Support for different transaction types (Payment, Refund, Chargeback)
+- **Detailed Transaction Records**: Store comprehensive transaction details for auditing and reporting
+
+### 🔌 Transaction Endpoints
+
+- POST `/api/transactions` - Create a new transaction (Buyers or Admins only)
+- GET `/api/transactions/:id` - Get transaction details by ID (Transaction's buyer or Admin)
+- GET `/api/transactions/order/:orderId` - Get all transactions for a specific order (Order's buyer or Admin)
+- PUT `/api/transactions/:id/status` - Update transaction status (Admins only)
+- GET `/api/transactions/generate/id` - Generate a unique transaction ID
+
+### 🔄 Transaction Workflow
+
+1. **💳 Payment Initiation**:
+   - Buyer initiates payment for an order
+   - System generates a unique transaction ID
+   - Transaction is created with 'Pending' status
+
+2. **🔍 Payment Processing**:
+   - Payment is processed through the payment gateway
+   - External transaction ID from the payment processor is stored
+   - Transaction status is updated based on payment result
+
+3. **✅ Payment Completion**:
+   - On successful payment, transaction status is updated to 'Completed'
+   - Order status is updated accordingly
+   - Buyer receives payment confirmation
+
+4. **❌ Payment Failure Handling**:
+   - If payment fails, transaction status is updated to 'Failed'
+   - System provides feedback on the reason for failure
+   - Buyer can retry payment or choose an alternative payment method
+
+### 💾 Transaction Model
+
+```json
+{
+  "transactionId": "string", // External transaction ID from payment processor as primary key
+  "orderId": "integer",
+  "amount": "decimal",
+  "paymentMethod": "enum", // 'Credit Card', 'Debit Card', 'PayPal', 'Bank Transfer', 'Cash on Delivery'
+  "transactionDate": "date",
+  "transactionType": "enum", // 'Payment', 'Refund', 'Chargeback'
+  "status": "enum", // 'Pending', 'Completed', 'Failed'
+  "details": "json"
+}
+```
+
+## 💬 Messaging System
+
+### ✨ Features
+
+- **Direct Messaging**: Enable direct communication between buyers and producers
+- **Order-Specific Conversations**: Link messages to specific orders for contextual discussions
+- **Message Threading**: Organize conversations in threads for better readability
+- **Notification System**: Alert users about new messages via email and in-app notifications
+- **Message Status Tracking**: Track if messages have been delivered and read
+- **File Attachments**: Allow users to share images and documents in messages
+- **Message Search**: Search through message history by keywords or dates
+
+### 🔌 Messaging Endpoints
+
+#### 💬 Conversation Management
+- POST `/api/messages/conversations` - Start a new conversation
+- GET `/api/messages/conversations` - Get all conversations for the authenticated user
+- GET `/api/messages/conversations/:id` - Get a specific conversation by ID
+- GET `/api/messages/conversations/order/:orderId` - Get conversation related to a specific order
+
+#### 📨 Message Management
+- POST `/api/messages/conversations/:conversationId` - Send a new message in a conversation
+- GET `/api/messages/conversations/:conversationId/messages` - Get all messages in a conversation
+- PUT `/api/messages/:messageId/read` - Mark a message as read
+- DELETE `/api/messages/:messageId` - Delete a message (soft delete)
+
+### 🔄 Messaging Workflow
+
+1. **💬 Conversation Initiation**:
+   - User (buyer or producer) initiates a conversation
+   - System creates a new conversation thread
+   - Initial message is sent and stored
+
+2. **📨 Message Exchange**:
+   - Users send messages within the conversation
+   - Messages are delivered in real-time when possible
+   - Message status is tracked (sent, delivered, read)
+
+3. **📎 Order Context**:
+   - Conversations can be linked to specific orders
+   - Order details are accessible within the conversation
+   - Both parties can reference order information
+
+4. **🔔 Notifications**:
+   - Users receive notifications for new messages
+   - Notification preferences can be customized
+   - Email notifications for offline users
+
+### 💾 Data Models
+
+#### Conversation Model
+```json
+{
+  "conversationId": "integer",
+  "topic": "string",
+  "startedBy": "integer", // userId of the conversation initiator
+  "orderId": "integer", // optional, if conversation is related to an order
+  "createdAt": "datetime",
+  "updatedAt": "datetime",
+  "lastMessageAt": "datetime"
+}
+```
+
+#### Message Model
+```json
+{
+  "messageId": "integer",
+  "conversationId": "integer",
+  "senderId": "integer",
+  "content": "text",
+  "attachments": "json", // array of attachment objects
+  "sentAt": "datetime",
+  "deliveredAt": "datetime",
+  "readAt": "datetime",
+  "isDeleted": "boolean"
+}
+```
+
+#### ConversationParticipant Model
+```json
+{
+  "id": "integer",
+  "conversationId": "integer",
+  "userId": "integer",
+  "role": "string", // 'buyer' or 'producer'
+  "joinedAt": "datetime",
+  "lastReadMessageId": "integer"
+}
+```
+
+## �📄 License
 
 ISC
