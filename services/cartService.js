@@ -47,8 +47,8 @@ const getCart = async (buyerId) => {
               model: Product,
               include: [
                 { model: Image, limit: 1 },
-                { model: Category, attributes: ['id', 'name'] },
-                { model: City, attributes: ['id', 'name'] },
+                { model: Category, attributes: ['categoryId', 'categoryId'] },
+                { model: City, attributes: ['id', 'cityName'] },
                 { model: Producer, attributes: ['id', 'businessName'] }
               ]
             }

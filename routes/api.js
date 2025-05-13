@@ -24,4 +24,7 @@ router.use('/cart', require('../routes/cart'));
 // Payment Routes
 router.use('/payments', require('../routes/payments'));
 
+// Transaction Routes
+router.use('/transactions', require('../routes/transactions'));
+
 module.exports = router;

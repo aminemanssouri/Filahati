@@ -156,9 +156,9 @@ const recordTransaction = async (transactionData) => {
   try {
     // Create transaction record
     const newTransaction = await Transaction.create({
+      transactionId: transactionData.transactionId, // Use external transaction ID as primary key
       orderId: transactionData.orderId,
       amount: transactionData.amount,
-      externalTransactionId: transactionData.transactionId,
       paymentMethod: transactionData.paymentMethod,
       transactionDate: new Date(),
       transactionType: 'Payment',

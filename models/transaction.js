@@ -16,9 +16,9 @@ module.exports = (sequelize, DataTypes) => {
   }
   Transaction.init({
     transactionId: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true
+      type: DataTypes.STRING,
+      allowNull: false,
+      primaryKey: true
     },
     orderId: {
       type: DataTypes.INTEGER,
@@ -31,10 +31,6 @@ module.exports = (sequelize, DataTypes) => {
     amount: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false
-    },
-    externalTransactionId: {
-      type: DataTypes.STRING,
-      allowNull: true
     },
     paymentMethod: {
       type: DataTypes.ENUM('Credit Card', 'Debit Card', 'PayPal', 'Bank Transfer', 'Cash on Delivery'),

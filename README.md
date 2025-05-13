@@ -259,6 +259,10 @@ filahati-api/
 #### 📦 Shipping Address Endpoints
 - POST `/api/shipping-addresses` - Create a new shipping address
 - GET `/api/shipping-addresses/my` - Get all shipping addresses for the authenticated buyer
+- GET `/api/shipping-addresses/:id` - Get a specific shipping address by ID
+- PUT `/api/shipping-addresses/:id` - Update a shipping address
+- DELETE `/api/shipping-addresses/:id` - Delete a shipping address
+- PUT `/api/shipping-addresses/:id/default` - Set a shipping address as default
 
 #### 🧑‍🌾 Producer Order Endpoints
 - GET `/api/orders/producer` - Get all orders containing the authenticated producer's products
@@ -286,6 +290,54 @@ filahati-api/
    - Order is delivered to the buyer
    - Status is updated to 'Delivered'
    - Buyer can leave reviews for products
+
+## 📦 Shipping Address Management System
+
+### ✨ Features
+
+- **Multiple Addresses**: Buyers can save and manage multiple shipping addresses
+- **Default Address Selection**: Set a preferred address as default for faster checkout
+- **Address Validation**: Basic validation for required fields
+- **City Integration**: Addresses are linked to cities for regional organization
+- **Secure Access Control**: Only the address owner can view, edit, or delete their addresses
+- **Seamless Order Integration**: Addresses can be selected during order creation
+
+### 🔄 Address Management Workflow
+
+1. **📝 Address Creation**:
+   - Buyer provides address details (contact name, address lines, postal code, etc.)
+   - System validates the address information
+   - Address is saved to the buyer's profile
+   - First address is automatically set as default
+
+2. **🔄 Address Updates**:
+   - Buyer can update any address details
+   - Changes are immediately reflected in the system
+   - Updated addresses can be used for new orders
+
+3. **⭐ Default Address Management**:
+   - Buyer can set any address as default
+   - Previous default address is automatically unset
+   - Default address is pre-selected during checkout
+
+4. **🗑️ Address Deletion**:
+   - Buyer can delete unwanted addresses
+   - System prevents deletion of addresses used in active orders
+   - If default address is deleted, another address is set as default if available
+
+### 💾 Example Shipping Address Creation
+
+```json
+{
+  "contactName": "John Doe",
+  "addressLine1": "123 Main Street",
+  "addressLine2": "Apt 4B",
+  "postalCode": "10001",
+  "contactNumber": "+1234567890",
+  "cityId": 5,
+  "isDefault": true
+}
+```
 
 ## 📄 License
 
