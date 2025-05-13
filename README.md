@@ -339,6 +339,62 @@ filahati-api/
 }
 ```
 
+## 💰 Transaction Management System
+
+### ✨ Features
+
+- **Secure Payment Tracking**: Track all payment transactions with unique transaction IDs
+- **Order Integration**: Transactions are linked directly to orders for complete financial tracking
+- **Multiple Payment Methods**: Support for various payment methods (Credit Card, Debit Card, PayPal, etc.)
+- **Transaction Status Monitoring**: Track the status of each transaction (Pending, Completed, Failed)
+- **Transaction Types**: Support for different transaction types (Payment, Refund, Chargeback)
+- **Detailed Transaction Records**: Store comprehensive transaction details for auditing and reporting
+
+### 🔌 Transaction Endpoints
+
+- POST `/api/transactions` - Create a new transaction (Buyers or Admins only)
+- GET `/api/transactions/:id` - Get transaction details by ID (Transaction's buyer or Admin)
+- GET `/api/transactions/order/:orderId` - Get all transactions for a specific order (Order's buyer or Admin)
+- PUT `/api/transactions/:id/status` - Update transaction status (Admins only)
+- GET `/api/transactions/generate/id` - Generate a unique transaction ID
+
+### 🔄 Transaction Workflow
+
+1. **💳 Payment Initiation**:
+   - Buyer initiates payment for an order
+   - System generates a unique transaction ID
+   - Transaction is created with 'Pending' status
+
+2. **🔍 Payment Processing**:
+   - Payment is processed through the payment gateway
+   - External transaction ID from the payment processor is stored
+   - Transaction status is updated based on payment result
+
+3. **✅ Payment Completion**:
+   - On successful payment, transaction status is updated to 'Completed'
+   - Order status is updated accordingly
+   - Buyer receives payment confirmation
+
+4. **❌ Payment Failure Handling**:
+   - If payment fails, transaction status is updated to 'Failed'
+   - System provides feedback on the reason for failure
+   - Buyer can retry payment or choose an alternative payment method
+
+### 💾 Transaction Model
+
+```json
+{
+  "transactionId": "string", // External transaction ID from payment processor as primary key
+  "orderId": "integer",
+  "amount": "decimal",
+  "paymentMethod": "enum", // 'Credit Card', 'Debit Card', 'PayPal', 'Bank Transfer', 'Cash on Delivery'
+  "transactionDate": "date",
+  "transactionType": "enum", // 'Payment', 'Refund', 'Chargeback'
+  "status": "enum", // 'Pending', 'Completed', 'Failed'
+  "details": "json"
+}
+```
+
 ## 📄 License
 
 ISC
