@@ -27,4 +27,7 @@ router.use('/payments', require('../routes/payments'));
 // Transaction Routes
 router.use('/transactions', require('../routes/transactions'));
 
+// Review Routes
+router.use('/reviews', require('../routes/reviews'));
+
 module.exports = router;
