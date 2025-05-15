@@ -306,6 +306,32 @@ const updateProductById = async (productId, data, userId) => {
   return { success: true, product: updatedProduct };
 };
 
+/**
+ * Search for products using full-text search
+ * @param {String} searchTerm - Search term
+ * @returns {Promise<Array>} - Array of matching products
+ */
+const searchProducts = async (searchTerm) => {
+  const { Op } = require('sequelize');
+  const sequelize = require('sequelize');
+  
+  // Sanitize the search term to prevent SQL injection
+  const sanitizedTerm = searchTerm.replace(/'/g, "''");
+  
+  return await Product.findAll({
+    where: sequelize.literal(`to_tsvector('english', "title" || ' ' || COALESCE("description", '')) @@ plainto_tsquery('english', '${sanitizedTerm}')`),
+    include: [
+      { model: Category },
+      { model: City },
+      { model: Producer },
+      { model: Unites },
+      { model: Tag },
+      { model: Image }
+    ],
+    limit: 20
+  });
+};
+
 module.exports = {
   validateProductData,
   processRelatedEntities,
@@ -317,5 +343,6 @@ module.exports = {
   getProductsByProducerId,
   deleteProductById,
   updateProductById,
-  invalidateProductCache
+  invalidateProductCache,
+  searchProducts
 };

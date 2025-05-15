@@ -33,4 +33,7 @@ router.use('/reviews', require('../routes/reviews'));
 // Message Routes
 router.use('/messages', require('../routes/messages'));
 
+// Search Routes
+router.use('/search', require('../routes/search'));
+
 module.exports = router;
