@@ -1,0 +1,571 @@
+{"level":"info","message":"Server running on port 5000 with PID: 5780","service":"filahati-api","timestamp":"2025-05-15 16:03:36"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:03:36"}
+{"level":"info","message":"Server running on port 5000 with PID: 4044","service":"filahati-api","timestamp":"2025-05-15 16:22:04"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:22:04"}
+{"level":"info","message":"Primary 31144 is running","service":"filahati-api","timestamp":"2025-05-15 16:24:41"}
+{"level":"info","message":"Setting up 8 workers...","service":"filahati-api","timestamp":"2025-05-15 16:24:41"}
+{"level":"warn","message":"Worker 27480 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:44"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:44"}
+{"level":"warn","message":"Worker 33028 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:44"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:44"}
+{"level":"info","message":"Worker 42036 started","service":"filahati-api","timestamp":"2025-05-15 16:24:42"}
+{"level":"warn","message":"Worker 8640 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:44"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:44"}
+{"level":"warn","message":"Worker 4352 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:44"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:45"}
+{"level":"warn","message":"Worker 23820 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:45"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:45"}
+{"level":"warn","message":"Worker 42036 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:45"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:45"}
+{"level":"warn","message":"Worker 42572 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:45"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:45"}
+{"level":"warn","message":"Worker 28424 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:45"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:45"}
+{"level":"warn","message":"Worker 43328 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"warn","message":"Worker 2696 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"warn","message":"Worker 26040 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"warn","message":"Worker 30104 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"warn","message":"Worker 43264 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"warn","message":"Worker 31064 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"warn","message":"Worker 43884 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"warn","message":"Worker 39780 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:48"}
+{"level":"warn","message":"Worker 10536 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:51"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:51"}
+{"level":"warn","message":"Worker 29504 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:52"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:52"}
+{"level":"warn","message":"Worker 15472 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:52"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:52"}
+{"level":"warn","message":"Worker 13876 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:52"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:52"}
+{"level":"warn","message":"Worker 39988 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:52"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:52"}
+{"level":"warn","message":"Worker 30876 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:52"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:52"}
+{"level":"warn","message":"Worker 36160 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:52"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:52"}
+{"level":"warn","message":"Worker 41976 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:52"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:52"}
+{"level":"warn","message":"Worker 15852 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"warn","message":"Worker 34756 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"warn","message":"Worker 40260 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"warn","message":"Worker 40856 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"warn","message":"Worker 31504 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"warn","message":"Worker 15292 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"warn","message":"Worker 5860 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"warn","message":"Worker 27068 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:55"}
+{"level":"warn","message":"Worker 26580 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"warn","message":"Worker 35188 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"warn","message":"Worker 18292 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"warn","message":"Worker 38236 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"warn","message":"Worker 14332 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"warn","message":"Worker 17920 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"warn","message":"Worker 21812 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"warn","message":"Worker 16496 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:24:59"}
+{"level":"warn","message":"Worker 18940 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:03"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:03"}
+{"level":"warn","message":"Worker 30436 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:03"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:03"}
+{"level":"warn","message":"Worker 34452 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:03"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:03"}
+{"level":"warn","message":"Worker 20948 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:03"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:03"}
+{"level":"warn","message":"Worker 19300 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:03"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:03"}
+{"level":"warn","message":"Worker 14320 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:03"}
+{"level":"info","message":"Worker 33612 started","service":"filahati-api","timestamp":"2025-05-15 16:25:00"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 33612","service":"filahati-api","timestamp":"2025-05-15 16:25:03"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:03"}
+{"level":"warn","message":"Worker 17348 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:04"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:04"}
+{"level":"warn","message":"Worker 33612 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:04"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:04"}
+{"level":"warn","message":"Worker 27028 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:07"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:07"}
+{"level":"warn","message":"Worker 39508 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:07"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:07"}
+{"level":"warn","message":"Worker 42380 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:07"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:07"}
+{"level":"warn","message":"Worker 36780 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:08"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:08"}
+{"level":"warn","message":"Worker 36240 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:08"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:08"}
+{"level":"warn","message":"Worker 42180 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:09"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:09"}
+{"level":"warn","message":"Worker 23312 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:09"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:09"}
+{"level":"warn","message":"Worker 27740 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:10"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:10"}
+{"level":"warn","message":"Worker 21536 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:12"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:12"}
+{"level":"warn","message":"Worker 35100 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:12"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:12"}
+{"level":"warn","message":"Worker 29952 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:12"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:12"}
+{"level":"warn","message":"Worker 20008 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:12"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:12"}
+{"level":"warn","message":"Worker 27332 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:12"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:13"}
+{"level":"warn","message":"Worker 19224 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:13"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:13"}
+{"level":"warn","message":"Worker 41292 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:14"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:14"}
+{"level":"warn","message":"Worker 3620 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:14"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:15"}
+{"level":"warn","message":"Worker 15484 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:16"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:16"}
+{"level":"warn","message":"Worker 26628 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:16"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:17"}
+{"level":"warn","message":"Worker 42432 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:17"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:17"}
+{"level":"warn","message":"Worker 22796 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:17"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:17"}
+{"level":"warn","message":"Worker 22124 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:17"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:17"}
+{"level":"warn","message":"Worker 23672 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:18"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:18"}
+{"level":"warn","message":"Worker 33456 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:19"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:19"}
+{"level":"warn","message":"Worker 17144 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:19"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:19"}
+{"level":"warn","message":"Worker 34720 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:20"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:20"}
+{"level":"warn","message":"Worker 40032 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:20"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:20"}
+{"level":"warn","message":"Worker 32776 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:20"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:20"}
+{"level":"warn","message":"Worker 16604 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:21"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:21"}
+{"level":"warn","message":"Worker 43660 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:21"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:21"}
+{"level":"warn","message":"Worker 21428 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:22"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:22"}
+{"level":"warn","message":"Worker 33780 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:23"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:23"}
+{"level":"warn","message":"Worker 43932 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:23"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:23"}
+{"level":"warn","message":"Worker 39136 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:24"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:24"}
+{"level":"warn","message":"Worker 42116 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:24"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:24"}
+{"level":"warn","message":"Worker 32284 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:24"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:24"}
+{"level":"warn","message":"Worker 34040 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:25"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:25"}
+{"level":"warn","message":"Worker 19148 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:25"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:25"}
+{"level":"warn","message":"Worker 29896 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:25:27"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:25:27"}
+{"level":"info","message":"Primary 20812 is running","service":"filahati-api","timestamp":"2025-05-15 16:29:48"}
+{"level":"info","message":"Setting up 8 workers...","service":"filahati-api","timestamp":"2025-05-15 16:29:48"}
+{"level":"info","message":"Worker 14908 started","service":"filahati-api","timestamp":"2025-05-15 16:29:48"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 14908","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"Server running on port 5000 with PID: 14908","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"Worker 31376 started","service":"filahati-api","timestamp":"2025-05-15 16:29:48"}
+{"level":"info","message":"Worker 28184 started","service":"filahati-api","timestamp":"2025-05-15 16:29:48"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 31376","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"Server running on port 5000 with PID: 31376","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 28184","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"Server running on port 5000 with PID: 28184","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"Worker 18796 started","service":"filahati-api","timestamp":"2025-05-15 16:29:48"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 18796","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"Server running on port 5000 with PID: 18796","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"Worker 7520 started","service":"filahati-api","timestamp":"2025-05-15 16:29:48"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 7520","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"Server running on port 5000 with PID: 7520","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"Worker 13508 started","service":"filahati-api","timestamp":"2025-05-15 16:29:48"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 13508","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"Server running on port 5000 with PID: 13508","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:29:51"}
+{"level":"info","message":"Worker 24584 started","service":"filahati-api","timestamp":"2025-05-15 16:29:48"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 24584","service":"filahati-api","timestamp":"2025-05-15 16:29:52"}
+{"level":"info","message":"Server running on port 5000 with PID: 24584","service":"filahati-api","timestamp":"2025-05-15 16:29:52"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:29:52"}
+{"level":"info","message":"Worker 34680 started","service":"filahati-api","timestamp":"2025-05-15 16:29:48"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 34680","service":"filahati-api","timestamp":"2025-05-15 16:29:52"}
+{"level":"info","message":"Server running on port 5000 with PID: 34680","service":"filahati-api","timestamp":"2025-05-15 16:29:52"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:29:52"}
+{"level":"info","message":"Primary 38228 is running","service":"filahati-api","timestamp":"2025-05-15 16:30:19"}
+{"level":"info","message":"Setting up 8 workers...","service":"filahati-api","timestamp":"2025-05-15 16:30:19"}
+{"level":"warn","message":"Worker 32588 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"info","message":"Worker 30800 started","service":"filahati-api","timestamp":"2025-05-15 16:30:20"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 30800","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"warn","message":"Worker 30148 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"warn","message":"Worker 13888 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"warn","message":"Worker 13176 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"warn","message":"Worker 38900 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"warn","message":"Worker 6324 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"warn","message":"Worker 35548 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"warn","message":"Worker 30800 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:23"}
+{"level":"warn","message":"Worker 43940 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"warn","message":"Worker 5420 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"warn","message":"Worker 2284 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"warn","message":"Worker 19444 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"warn","message":"Worker 23140 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"warn","message":"Worker 3148 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"warn","message":"Worker 1456 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"warn","message":"Worker 29612 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:26"}
+{"level":"warn","message":"Worker 30556 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:29"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:29"}
+{"level":"warn","message":"Worker 40752 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:30"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:30"}
+{"level":"warn","message":"Worker 38216 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:30"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:30"}
+{"level":"warn","message":"Worker 39688 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:30"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:30"}
+{"level":"warn","message":"Worker 12796 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:30"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:30"}
+{"level":"warn","message":"Worker 32648 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:30"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:30"}
+{"level":"warn","message":"Worker 13596 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:30"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:30"}
+{"level":"warn","message":"Worker 14644 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:30:30"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:30:30"}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:30:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:31:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:32:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:33:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:34:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:35:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:36:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:37:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:38:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"level":"info","message":"Primary 16724 is running","service":"filahati-api","timestamp":"2025-05-15 16:39:07"}
+{"level":"info","message":"Setting up 8 workers...","service":"filahati-api","timestamp":"2025-05-15 16:39:07"}
+{"level":"info","message":"Worker 24152 started","service":"filahati-api","timestamp":"2025-05-15 16:39:08"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 24152","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"Server running on port 50008 with PID: 24152","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"Worker 9384 started","service":"filahati-api","timestamp":"2025-05-15 16:39:08"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 9384","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"Server running on port 50005 with PID: 9384","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"Worker 40744 started","service":"filahati-api","timestamp":"2025-05-15 16:39:08"}
+{"level":"info","message":"Worker 27876 started","service":"filahati-api","timestamp":"2025-05-15 16:39:08"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 40744","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"Server running on port 50002 with PID: 40744","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 27876","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"Server running on port 50004 with PID: 27876","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"Worker 42772 started","service":"filahati-api","timestamp":"2025-05-15 16:39:08"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 42772","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"Server running on port 50001 with PID: 42772","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"Worker 14068 started","service":"filahati-api","timestamp":"2025-05-15 16:39:08"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 14068","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"Server running on port 50003 with PID: 14068","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"Worker 41680 started","service":"filahati-api","timestamp":"2025-05-15 16:39:08"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 41680","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"Server running on port 50007 with PID: 41680","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:39:12"}
+{"level":"info","message":"Worker 35596 started","service":"filahati-api","timestamp":"2025-05-15 16:39:08"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 35596","service":"filahati-api","timestamp":"2025-05-15 16:39:13"}
+{"level":"info","message":"Server running on port 50006 with PID: 35596","service":"filahati-api","timestamp":"2025-05-15 16:39:13"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:39:13"}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:39:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:40:07","workerPids":[42772,40744,14068,27876,9384,35596,41680,24152]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:40:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:41:07","workerPids":[42772,40744,14068,27876,9384,35596,41680,24152]}
+{"level":"info","message":"Primary 10848 is running","service":"filahati-api","timestamp":"2025-05-15 16:41:19"}
+{"level":"info","message":"Setting up 8 workers...","service":"filahati-api","timestamp":"2025-05-15 16:41:19"}
+{"level":"warn","message":"Worker 6632 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:24"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:24"}
+{"level":"warn","message":"Worker 15104 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:24"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:24"}
+{"level":"warn","message":"Worker 39572 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:24"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:25"}
+{"level":"warn","message":"Worker 38748 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:25"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:25"}
+{"level":"warn","message":"Worker 38228 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:25"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:25"}
+{"level":"warn","message":"Worker 15220 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:25"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:25"}
+{"level":"warn","message":"Worker 32156 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:25"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:25"}
+{"level":"warn","message":"Worker 26680 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:25"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:25"}
+{"level":"info","message":"Primary 7204 is running","service":"filahati-api","timestamp":"2025-05-15 16:41:43"}
+{"level":"info","message":"Setting up 8 workers...","service":"filahati-api","timestamp":"2025-05-15 16:41:43"}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:41:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"level":"warn","message":"Worker 39840 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:48"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:48"}
+{"level":"warn","message":"Worker 14764 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:48"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:49"}
+{"level":"warn","message":"Worker 29996 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:49"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:49"}
+{"level":"warn","message":"Worker 12716 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:49"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:49"}
+{"level":"info","message":"Worker 42116 started","service":"filahati-api","timestamp":"2025-05-15 16:41:44"}
+{"level":"warn","message":"Worker 15308 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:49"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:49"}
+{"level":"warn","message":"Worker 9188 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:49"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:49"}
+{"level":"warn","message":"Worker 42116 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:49"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:49"}
+{"level":"warn","message":"Worker 23080 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:49"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:49"}
+{"level":"warn","message":"Worker 18620 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:53"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:53"}
+{"level":"warn","message":"Worker 31836 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:54"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:54"}
+{"level":"warn","message":"Worker 39688 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:54"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:54"}
+{"level":"info","message":"Worker 32040 started","service":"filahati-api","timestamp":"2025-05-15 16:41:50"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 32040","service":"filahati-api","timestamp":"2025-05-15 16:41:53"}
+{"level":"info","message":"Server running on port 50009 with PID: 32040","service":"filahati-api","timestamp":"2025-05-15 16:41:54"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:41:54"}
+{"level":"warn","message":"Worker 17992 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:54"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:54"}
+{"level":"warn","message":"Worker 41588 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:54"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:54"}
+{"level":"warn","message":"Worker 15260 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:54"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:54"}
+{"level":"warn","message":"Worker 23692 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:55"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:55"}
+{"level":"warn","message":"Worker 42144 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:58"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:58"}
+{"level":"warn","message":"Worker 21188 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:59"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:59"}
+{"level":"warn","message":"Worker 34408 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:59"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:59"}
+{"level":"warn","message":"Worker 19112 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:59"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:59"}
+{"level":"warn","message":"Worker 43076 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:59"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:59"}
+{"level":"warn","message":"Worker 20984 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:41:59"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:41:59"}
+{"level":"warn","message":"Worker 41924 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:00"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:00"}
+{"level":"warn","message":"Worker 16480 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:03"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:03"}
+{"level":"warn","message":"Worker 20796 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:03"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:03"}
+{"level":"warn","message":"Worker 41064 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:04"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:04"}
+{"level":"warn","message":"Worker 28076 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:04"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:04"}
+{"level":"warn","message":"Worker 20672 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:04"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:04"}
+{"level":"warn","message":"Worker 32528 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:04"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:04"}
+{"level":"warn","message":"Worker 30244 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:05"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:05"}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:42:08","workerPids":[42772,40744,14068,27876,9384,35596,41680,24152]}
+{"level":"warn","message":"Worker 39612 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:08"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:08"}
+{"level":"warn","message":"Worker 4528 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:08"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:08"}
+{"level":"warn","message":"Worker 36704 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:08"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:08"}
+{"level":"warn","message":"Worker 12324 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:09"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:09"}
+{"level":"warn","message":"Worker 34760 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:09"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:09"}
+{"level":"warn","message":"Worker 24740 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:09"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:09"}
+{"level":"warn","message":"Worker 13176 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:10"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:10"}
+{"level":"warn","message":"Worker 24860 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:13"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:13"}
+{"level":"warn","message":"Worker 18272 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:13"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:13"}
+{"level":"warn","message":"Worker 6588 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:13"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:13"}
+{"level":"warn","message":"Worker 38620 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:14"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:14"}
+{"level":"warn","message":"Worker 36468 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:15"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:15"}
+{"level":"warn","message":"Worker 27752 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:15"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:15"}
+{"level":"warn","message":"Worker 16424 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:15"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:15"}
+{"level":"warn","message":"Worker 36184 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:19"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:19"}
+{"level":"warn","message":"Worker 14348 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:19"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:19"}
+{"level":"warn","message":"Worker 28896 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:19"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:19"}
+{"level":"warn","message":"Worker 19220 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:19"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:20"}
+{"level":"warn","message":"Worker 31272 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:20"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:20"}
+{"level":"warn","message":"Worker 18848 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:20"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:20"}
+{"level":"warn","message":"Worker 14540 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:21"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:21"}
+{"level":"warn","message":"Worker 32792 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:23"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:23"}
+{"level":"warn","message":"Worker 27436 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:23"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:23"}
+{"level":"warn","message":"Worker 33720 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:23"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:23"}
+{"level":"warn","message":"Worker 15292 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:24"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:24"}
+{"level":"warn","message":"Worker 38932 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:24"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:24"}
+{"level":"warn","message":"Worker 29940 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:24"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:24"}
+{"level":"warn","message":"Worker 1348 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:26"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:26"}
+{"level":"warn","message":"Worker 35828 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:27"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:27"}
+{"level":"warn","message":"Worker 19260 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:27"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:27"}
+{"level":"warn","message":"Worker 32596 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:28"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:28"}
+{"level":"warn","message":"Worker 35292 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:28"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:28"}
+{"level":"warn","message":"Worker 39828 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:29"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:29"}
+{"level":"warn","message":"Worker 16092 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:29"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:29"}
+{"level":"warn","message":"Worker 28412 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:31"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:31"}
+{"level":"warn","message":"Worker 31588 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:32"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:32"}
+{"level":"warn","message":"Worker 38388 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:33"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:33"}
+{"level":"warn","message":"Worker 40428 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:33"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:33"}
+{"level":"warn","message":"Worker 34412 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:34"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:34"}
+{"level":"warn","message":"Worker 14448 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:34"}
+{"level":"info","message":"Starting a new worker...","service":"filahati-api","timestamp":"2025-05-15 16:42:34"}
+{"level":"warn","message":"Worker 2744 died with code 1 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:42:34"}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:42:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:43:08","workerPids":[42772,40744,14068,27876,9384,35596,41680,24152]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:43:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:44:08","workerPids":[42772,40744,14068,27876,9384,35596,41680,24152]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:44:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:45:08","workerPids":[42772,40744,14068,27876,9384,35596,41680,24152]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:45:48","workerPids":[14908,13508,31376,7520,18796,24584,28184,34680]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:46:08","workerPids":[42772,40744,14068,27876,9384,35596,41680,24152]}
+{"level":"warn","message":"Worker 24584 died with code 3221225786 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:46:48"}
+{"level":"warn","message":"Worker 9384 died with code 3221225786 and signal null","service":"filahati-api","timestamp":"2025-05-15 16:46:48"}
+{"level":"info","message":"Primary 3080 is running","service":"filahati-api","timestamp":"2025-05-15 16:56:19"}
+{"level":"info","message":"Setting up 8 workers...","service":"filahati-api","timestamp":"2025-05-15 16:56:19"}
+{"level":"info","message":"Worker 9672 started","service":"filahati-api","timestamp":"2025-05-15 16:56:20"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 9672","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"Server running on port 50001 with PID: 9672","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"Worker 12272 started","service":"filahati-api","timestamp":"2025-05-15 16:56:20"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 12272","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"Server running on port 50004 with PID: 12272","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"Worker 7608 started","service":"filahati-api","timestamp":"2025-05-15 16:56:20"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 7608","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"Server running on port 50007 with PID: 7608","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"Worker 6768 started","service":"filahati-api","timestamp":"2025-05-15 16:56:20"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 6768","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"Server running on port 50005 with PID: 6768","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"Worker 5744 started","service":"filahati-api","timestamp":"2025-05-15 16:56:20"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 5744","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"Server running on port 50002 with PID: 5744","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"Worker 9800 started","service":"filahati-api","timestamp":"2025-05-15 16:56:20"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 9800","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"Server running on port 50008 with PID: 9800","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"Worker 13000 started","service":"filahati-api","timestamp":"2025-05-15 16:56:20"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 13000","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"Server running on port 50006 with PID: 13000","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"Worker 6912 started","service":"filahati-api","timestamp":"2025-05-15 16:56:20"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 6912","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"Server running on port 50003 with PID: 6912","service":"filahati-api","timestamp":"2025-05-15 16:56:22"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 16:56:23"}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:57:19","workerPids":[9672,5744,6912,12272,6768,13000,7608,9800]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:58:19","workerPids":[9672,5744,6912,12272,6768,13000,7608,9800]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 16:59:19","workerPids":[9672,5744,6912,12272,6768,13000,7608,9800]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 17:00:19","workerPids":[9672,5744,6912,12272,6768,13000,7608,9800]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 17:01:19","workerPids":[9672,5744,6912,12272,6768,13000,7608,9800]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 17:02:19","workerPids":[9672,5744,6912,12272,6768,13000,7608,9800]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 17:03:19","workerPids":[9672,5744,6912,12272,6768,13000,7608,9800]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 17:04:19","workerPids":[9672,5744,6912,12272,6768,13000,7608,9800]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 17:05:19","workerPids":[9672,5744,6912,12272,6768,13000,7608,9800]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 17:06:19","workerPids":[9672,5744,6912,12272,6768,13000,7608,9800]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 17:07:19","workerPids":[9672,5744,6912,12272,6768,13000,7608,9800]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 17:08:19","workerPids":[9672,5744,6912,12272,6768,13000,7608,9800]}
+{"level":"info","message":"Primary 1048 is running","service":"filahati-api","timestamp":"2025-05-15 17:09:26"}
+{"level":"info","message":"Setting up 8 workers...","service":"filahati-api","timestamp":"2025-05-15 17:09:26"}
+{"level":"info","message":"Worker 16752 started","service":"filahati-api","timestamp":"2025-05-15 17:09:27"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 16752","service":"filahati-api","timestamp":"2025-05-15 17:09:29"}
+{"level":"info","message":"Server running on port 50003 with PID: 16752","service":"filahati-api","timestamp":"2025-05-15 17:09:29"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 17:09:29"}
+{"level":"info","message":"Worker 10884 started","service":"filahati-api","timestamp":"2025-05-15 17:09:27"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 10884","service":"filahati-api","timestamp":"2025-05-15 17:09:29"}
+{"level":"info","message":"Server running on port 50002 with PID: 10884","service":"filahati-api","timestamp":"2025-05-15 17:09:29"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 17:09:29"}
+{"level":"info","message":"Worker 17368 started","service":"filahati-api","timestamp":"2025-05-15 17:09:27"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 17368","service":"filahati-api","timestamp":"2025-05-15 17:09:29"}
+{"level":"info","message":"Server running on port 50001 with PID: 17368","service":"filahati-api","timestamp":"2025-05-15 17:09:29"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 17:09:29"}
+{"level":"info","message":"Worker 6744 started","service":"filahati-api","timestamp":"2025-05-15 17:09:27"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 6744","service":"filahati-api","timestamp":"2025-05-15 17:09:29"}
+{"level":"info","message":"Server running on port 50004 with PID: 6744","service":"filahati-api","timestamp":"2025-05-15 17:09:30"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 17:09:30"}
+{"level":"info","message":"Worker 10968 started","service":"filahati-api","timestamp":"2025-05-15 17:09:27"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 10968","service":"filahati-api","timestamp":"2025-05-15 17:09:29"}
+{"level":"info","message":"Server running on port 50008 with PID: 10968","service":"filahati-api","timestamp":"2025-05-15 17:09:30"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 17:09:30"}
+{"level":"info","message":"Worker 9624 started","service":"filahati-api","timestamp":"2025-05-15 17:09:27"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 9624","service":"filahati-api","timestamp":"2025-05-15 17:09:29"}
+{"level":"info","message":"Server running on port 50007 with PID: 9624","service":"filahati-api","timestamp":"2025-05-15 17:09:30"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 17:09:30"}
+{"level":"info","message":"Worker 17324 started","service":"filahati-api","timestamp":"2025-05-15 17:09:27"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 17324","service":"filahati-api","timestamp":"2025-05-15 17:09:30"}
+{"level":"info","message":"Server running on port 50005 with PID: 17324","service":"filahati-api","timestamp":"2025-05-15 17:09:30"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 17:09:30"}
+{"level":"info","message":"Worker 16132 started","service":"filahati-api","timestamp":"2025-05-15 17:09:27"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 16132","service":"filahati-api","timestamp":"2025-05-15 17:09:30"}
+{"level":"info","message":"Server running on port 50006 with PID: 16132","service":"filahati-api","timestamp":"2025-05-15 17:09:30"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 17:09:30"}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 17:10:26","workerPids":[17368,10884,16752,6744,17324,16132,9624,10968]}

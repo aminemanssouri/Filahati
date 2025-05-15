@@ -2,6 +2,8 @@
  * Socket.io event handlers
  * Contains all the event handlers for Socket.io connections
  */
+const { getFromCache, setToCache } = require('../services/cacheService');
+const logger = require('../services/loggerService');
 
 /**
  * Initialize Socket.io event handlers
@@ -10,36 +12,43 @@
 const initializeSocketHandlers = (io) => {
   // Socket.io connection handling
   io.on('connection', (socket) => {
-    console.log(`User connected: ${socket.user.id}`);
+    logger.info(`User connected`, { userId: socket.user.id, socketId: socket.id });
     
     // Join user to their personal room for direct messages
     socket.join(`user:${socket.user.id}`);
     
     // Join conversation rooms
-    socket.on('join-conversation', (conversationId) => {
+    socket.on('join-conversation', async (conversationId) => {
       socket.join(`conversation:${conversationId}`);
-      console.log(`User ${socket.user.id} joined conversation ${conversationId}`);
+      logger.info(`User joined conversation`, { userId: socket.user.id, conversationId });
     });
     
     // Leave conversation rooms
     socket.on('leave-conversation', (conversationId) => {
       socket.leave(`conversation:${conversationId}`);
-      console.log(`User ${socket.user.id} left conversation ${conversationId}`);
+      logger.info(`User left conversation`, { userId: socket.user.id, conversationId });
     });
     
     // Handle new messages
     socket.on('send-message', async (messageData) => {
       try {
         // Log the received data for debugging
-        console.log('Received message data:', messageData);
-        console.log('User ID:', socket.user.id);
+        logger.debug('Received message data', { 
+          messageData: JSON.stringify(messageData),
+          userId: socket.user.id,
+          socketId: socket.id
+        });
         
         // Validate required fields
         if (!messageData || !messageData.conversationId || !messageData.content) {
-          console.error('Missing required message data:', { 
+          logger.error('Missing required message data', { 
             hasMessageData: !!messageData,
             conversationId: messageData?.conversationId,
-            content: messageData?.content
+            content: messageData?.content,
+            userId: socket.user.id,
+            socketId: socket.id,
+            messageDataType: messageData ? typeof messageData : 'undefined',
+            messageDataKeys: messageData ? Object.keys(messageData) : []            
           });
           return socket.emit('message-error', { error: 'Missing required fields: conversationId and content are required' });
         }
@@ -49,7 +58,7 @@ const initializeSocketHandlers = (io) => {
         // Check if conversation exists
         const conversation = await Conversation.findByPk(messageData.conversationId);
         if (!conversation) {
-          console.error(`Conversation not found: ${messageData.conversationId}`);
+          logger.error(`Conversation not found`, { conversationId: messageData.conversationId, userId: socket.user.id });
           return socket.emit('message-error', { error: 'Conversation not found' });
         }
         
@@ -62,7 +71,7 @@ const initializeSocketHandlers = (io) => {
           sentAt: new Date()
         });
         
-        console.log('Message created successfully:', message.messageId);
+        logger.info('Message created successfully', { messageId: message.messageId, conversationId: message.conversationId, senderId: socket.user.id });
         
         // Update conversation's lastMessageAt
         await Conversation.update(
@@ -82,7 +91,12 @@ const initializeSocketHandlers = (io) => {
         });
         
       } catch (error) {
-        console.error('Error sending message:', error);
+        logger.error('Error sending message', { 
+          error: error.message, 
+          stack: error.stack,
+          userId: socket.user.id,
+          messageData: messageData ? JSON.stringify(messageData) : null 
+        });
         socket.emit('message-error', { error: 'Failed to send message' });
       }
     });
@@ -127,7 +141,13 @@ const initializeSocketHandlers = (io) => {
         });
         
       } catch (error) {
-        console.error('Error marking message as read:', error);
+        logger.error('Error marking message as read', { 
+          error: error.message, 
+          stack: error.stack,
+          userId: socket.user.id,
+          messageId: data?.messageId,
+          conversationId: data?.conversationId
+        });
         socket.emit('read-status-error', { error: 'Failed to update read status' });
       }
     });
@@ -153,7 +173,7 @@ const initializeSocketHandlers = (io) => {
     
     // Handle disconnection
     socket.on('disconnect', () => {
-      console.log(`User disconnected: ${socket.user.id}`);
+      logger.info(`User disconnected`, { userId: socket.user.id, socketId: socket.id });
     });
   });
 };

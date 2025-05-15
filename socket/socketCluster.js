@@ -8,6 +8,7 @@ const socketAuth = require('../middlewares/socketAuth');
 const { initializeSocketHandlers } = require('./socketHandlers');
 const cluster = require('cluster');
 const process = require('process');
+const logger = require('../services/loggerService');
 
 /**
  * Initialize Socket.io with clustering support
@@ -34,13 +35,17 @@ function initializeClusteredSocketIo(server) {
 
   // Set up inter-process communication for worker processes
   if (!cluster.isPrimary) {
+    logger.info(`Setting up Socket.io IPC for worker ${process.pid}`);
+    
     // Listen for messages from the primary process
     process.on('message', (message) => {
       // Handle different types of messages
       if (message.type === 'socket_broadcast') {
+        logger.debug(`Worker ${process.pid} received broadcast message`, { event: message.event });
         // Broadcast message to all clients connected to this worker
         io.emit(message.event, message.data);
       } else if (message.type === 'socket_room') {
+        logger.debug(`Worker ${process.pid} received room message`, { room: message.room, event: message.event });
         // Send message to a specific room
         io.to(message.room).emit(message.event, message.data);
       }
@@ -55,6 +60,7 @@ function initializeClusteredSocketIo(server) {
     
     // If this is a worker, send the event to primary for broadcast to other workers
     if (!cluster.isPrimary) {
+      logger.debug(`Worker ${process.pid} broadcasting event to other workers`, { event });
       process.send({
         type: 'broadcast',
         payload: {
@@ -78,6 +84,7 @@ function initializeClusteredSocketIo(server) {
       
       // If this is a worker, send to primary for broadcast to other workers
       if (!cluster.isPrimary) {
+        logger.debug(`Worker ${process.pid} sending room event to other workers`, { room, event });
         process.send({
           type: 'broadcast',
           payload: {
