@@ -5,17 +5,20 @@ const dotenv = require('dotenv');
 const {connectDB} = require('./config/database');
 const cookies = require('cookie-parser');
 const http = require('http');
-const socketIo = require('socket.io');
 // Import Socket.io authentication middleware
 const socketAuth = require('./middlewares/socketAuth');
 // Import routes
 const apiRoutes = require('./routes/api');
 // Import Socket.io event handlers
 const { initializeSocketHandlers } = require('./socket/socketHandlers');
+// Import clustered Socket.io implementation
+const { initializeClusteredSocketIo } = require('./socket/socketCluster');
 // Import error handling middleware
 const errorHandler = require('./middlewares/errorHandler');
 // Import cache headers middleware
 const setCacheHeaders = require('./middlewares/cacheHeaders');
+// Import cluster module to detect if we're in a worker
+const cluster = require('cluster');
 
 
 
@@ -35,18 +38,8 @@ const PORT = process.env.PORT || 5000;
 // Create HTTP server
 const server = http.createServer(app);
 
-// Initialize Socket.io with CORS settings
-const io = socketIo(server, {
-  cors: {
-    origin: '*', // In production, specify your frontend URL
-    methods: ['GET', 'POST'],
-    credentials: true,
-    allowedHeaders: ['Content-Type', 'Authorization']
-  },
-  // Enable WebSocket transport
-  transports: ['websocket', 'polling'],
-  
-});
+// Initialize Socket.io with clustering support
+const io = initializeClusteredSocketIo(server);
 
 // Middleware
 app.use(cors());
@@ -58,19 +51,28 @@ app.use(cookies());
 app.use(setCacheHeaders(3600));
 app.use('/api', apiRoutes);
 
-// Apply Socket.io authentication middleware
-io.use(socketAuth);
-
-// Initialize Socket.io event handlers
-initializeSocketHandlers(io);
-
 // Apply error handling middleware
 app.use(errorHandler);
 
 // Start server
 server.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT} with PID: ${process.pid}`);
   console.log(`WebSocket server is running`);
+});
+
+// Handle termination gracefully
+process.on('SIGTERM', () => {
+  console.log(`Process ${process.pid} received SIGTERM - graceful shutdown`);
+  server.close(() => {
+    console.log('HTTP server closed');
+    process.exit(0);
+  });
+
+  // Force shutdown after 5 seconds if server hasn't closed
+  setTimeout(() => {
+    console.log('Forcing shutdown after timeout');
+    process.exit(1);
+  }, 5000);
 });
 
 module.exports = { app, server, io };
