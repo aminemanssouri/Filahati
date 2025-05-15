@@ -30,4 +30,7 @@ router.use('/transactions', require('../routes/transactions'));
 // Review Routes
 router.use('/reviews', require('../routes/reviews'));
 
+// Message Routes
+router.use('/messages', require('../routes/messages'));
+
 module.exports = router;

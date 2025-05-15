@@ -30,16 +30,39 @@ const initializeSocketHandlers = (io) => {
     // Handle new messages
     socket.on('send-message', async (messageData) => {
       try {
+        // Log the received data for debugging
+        console.log('Received message data:', messageData);
+        console.log('User ID:', socket.user.id);
+        
+        // Validate required fields
+        if (!messageData || !messageData.conversationId || !messageData.content) {
+          console.error('Missing required message data:', { 
+            hasMessageData: !!messageData,
+            conversationId: messageData?.conversationId,
+            content: messageData?.content
+          });
+          return socket.emit('message-error', { error: 'Missing required fields: conversationId and content are required' });
+        }
+        
         const { Message, Conversation } = require('../models');
+        
+        // Check if conversation exists
+        const conversation = await Conversation.findByPk(messageData.conversationId);
+        if (!conversation) {
+          console.error(`Conversation not found: ${messageData.conversationId}`);
+          return socket.emit('message-error', { error: 'Conversation not found' });
+        }
         
         // Create message in database
         const message = await Message.create({
           conversationId: messageData.conversationId,
           senderId: socket.user.id,
           content: messageData.content,
-          attachments: messageData.attachments,
+          attachments: messageData.attachments || [],
           sentAt: new Date()
         });
+        
+        console.log('Message created successfully:', message.messageId);
         
         // Update conversation's lastMessageAt
         await Conversation.update(

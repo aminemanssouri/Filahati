@@ -38,10 +38,13 @@ const io = socketIo(server, {
   cors: {
     origin: '*', // In production, specify your frontend URL
     methods: ['GET', 'POST'],
-    credentials: true
+    credentials: true,
+    withCredentials: true,
+    allowedHeaders: ['Content-Type', 'Authorization']
   },
   // Enable WebSocket transport
-  transports: ['websocket', 'polling']
+  transports: ['websocket', 'polling'],
+  
 });
 
 // Middleware
