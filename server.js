@@ -14,6 +14,8 @@ const apiRoutes = require('./routes/api');
 const { initializeSocketHandlers } = require('./socket/socketHandlers');
 // Import error handling middleware
 const errorHandler = require('./middlewares/errorHandler');
+// Import cache headers middleware
+const setCacheHeaders = require('./middlewares/cacheHeaders');
 
 
 
@@ -52,6 +54,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 app.use(cookies());
+// Apply cache headers middleware for all routes - with a default max age of 1 hour
+app.use(setCacheHeaders(3600));
 app.use('/api', apiRoutes);
 
 // Apply Socket.io authentication middleware

@@ -1,4 +1,20 @@
 const { Product, Tag, Category, City, Producer, Unites, Image } = require('../models');
+const { deleteFromCache } = require('./cacheService');
+
+// Helper function to invalidate product caches
+const invalidateProductCache = (productId, producerId) => {
+  // Invalidate specific product cache
+  if (productId) {
+    deleteFromCache(`__express__/api/products/${productId}`);
+  }
+  
+  // Invalidate producer's products cache
+  if (producerId) {
+    deleteFromCache(`__express__/api/products/producer/${producerId}`);
+    // Also invalidate the producer's own products view
+    deleteFromCache(`__express__/api/products/my/products`);
+  }
+};
 
 /**
  * Validate product input data
@@ -202,6 +218,9 @@ const deleteProductById = async (productId, userId) => {
   // Delete the product
   await product.destroy();
   
+  // Invalidate cache for this product and producer's products
+  invalidateProductCache(productId, product.producerId);
+  
   return { success: true, message: "Product deleted successfully" };
 };
 
@@ -279,6 +298,9 @@ const updateProductById = async (productId, data, userId) => {
     await processImages(images, productId);
   }
 
+  // Invalidate cache for this product and producer's products
+  invalidateProductCache(productId, product.producerId);
+
   // Return the updated product with associations
   const updatedProduct = await getProductWithAssociations(productId);
   return { success: true, product: updatedProduct };
@@ -294,5 +316,6 @@ module.exports = {
   getProductById,
   getProductsByProducerId,
   deleteProductById,
-  updateProductById
+  updateProductById,
+  invalidateProductCache
 };
