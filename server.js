@@ -39,7 +39,6 @@ const io = socketIo(server, {
     origin: '*', // In production, specify your frontend URL
     methods: ['GET', 'POST'],
     credentials: true,
-    withCredentials: true,
     allowedHeaders: ['Content-Type', 'Authorization']
   },
   // Enable WebSocket transport

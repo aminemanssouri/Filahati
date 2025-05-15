@@ -16,11 +16,6 @@ const socketAuth = (socket, next) => {
     token = socket.handshake.headers.cookie; // Using 'token' as the cookie name to match your auth system
   }
   
-  // If no token in cookies, try to get it from auth object (fallback)
-  if (!token && socket.handshake.auth && socket.handshake.auth.token) {
-    token = socket.handshake.auth.token;
-  }
-  
   if (!token) {
     return next(new Error('Authentication error: Token not provided'));
   }
