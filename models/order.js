@@ -84,7 +84,23 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Order',
-    tableName: 'Orders'
+    tableName: 'Orders',
+    indexes: [
+      // Index for Orders by buyer - speeds up retrieving a buyer's orders
+      { name: 'orders_buyer_idx', fields: ['buyerId'] },
+      
+      // Index for Orders by status - improves filtering orders by status
+      { name: 'orders_status_idx', fields: ['status'] },
+      
+      // Index for sorting orders by date
+      { name: 'orders_date_idx', fields: ['orderDate'] },
+      
+      // Index for payment status filtering
+      { name: 'orders_payment_status_idx', fields: ['paymentStatus'] },
+      
+      // Composite index for buyer + status - optimizes filtered order history
+      { name: 'orders_buyer_status_idx', fields: ['buyerId', 'status'] }
+    ]
   });
   return Order;
 };

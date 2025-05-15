@@ -68,7 +68,20 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Conversation',
     tableName: 'Conversations',
-    timestamps: true
+    timestamps: true,
+    indexes: [
+      // Index for conversations by initiator - speeds up finding conversations started by a user
+      { name: 'conversations_starter_idx', fields: ['startedBy'] },
+      
+      // Index for conversations by related order - optimizes order-related conversation lookup
+      { name: 'conversations_order_idx', fields: ['orderId'] },
+      
+      // Index for sorting conversations by last message time
+      { name: 'conversations_last_message_idx', fields: ['lastMessageAt'] },
+      
+      // Composite index for order conversations with timestamp - helps with sorting order messages
+      { name: 'conversations_order_time_idx', fields: ['orderId', 'lastMessageAt'] }
+    ]
   });
   return Conversation;
 };

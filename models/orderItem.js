@@ -64,7 +64,17 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'OrderItem',
-    tableName: 'OrderItems'
+    tableName: 'OrderItems',
+    indexes: [
+      // Index for OrderItems by order - speeds up retrieving all items for an order
+      { name: 'order_items_order_idx', fields: ['orderId'] },
+      
+      // Index for OrderItems by product - speeds up finding all orders containing a specific product
+      { name: 'order_items_product_idx', fields: ['productId'] },
+      
+      // Composite index for efficient joins between orders and products
+      { name: 'order_items_order_product_idx', fields: ['orderId', 'productId'] }
+    ]
   });
   return OrderItem;
 };

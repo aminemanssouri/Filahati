@@ -65,7 +65,23 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'ConversationParticipant',
     tableName: 'ConversationParticipants',
-    timestamps: true
+    timestamps: true,
+    indexes: [
+      // Index for participants by user - speeds up finding all conversations a user is part of
+      { name: 'conversation_participants_user_idx', fields: ['userId'] },
+      
+      // Index for participants by conversation - speeds up finding all participants in a conversation
+      { name: 'conversation_participants_conversation_idx', fields: ['conversationId'] },
+      
+      // Index for participants by role - helps when finding all buyers or producers in conversations
+      { name: 'conversation_participants_role_idx', fields: ['role'] },
+      
+      // Composite index for user in conversation - optimizes checking if a user is in a specific conversation
+      { name: 'conversation_participants_user_conversation_idx', fields: ['userId', 'conversationId'] },
+      
+      // Index for lastReadMessageId - speeds up finding unread messages
+      { name: 'conversation_participants_last_read_msg_idx', fields: ['lastReadMessageId'] }
+    ]
   });
   return ConversationParticipant;
 };

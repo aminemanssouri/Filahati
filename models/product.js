@@ -129,7 +129,29 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Product',
-    tableName: 'Products'
+    tableName: 'Products',
+    indexes: [
+      // B-tree index for title searches
+      { name: 'products_title_idx', fields: ['title'] },
+      
+      // B-tree index for price filtering
+      { name: 'products_price_idx', fields: ['price'] },
+      
+      // Index for Products by category
+      { name: 'products_category_idx', fields: ['categoryId'] },
+      
+      // Index for Products by producer
+      { name: 'products_producer_idx', fields: ['producerId'] },
+      
+      // Composite index for Products by city and category
+      { name: 'products_city_category_idx', fields: ['cityId', 'categoryId'] },
+      
+      // Index for organic products
+      { name: 'products_organic_idx', fields: ['Organic'] },
+      
+      // Index for product status
+      { name: 'products_status_idx', fields: ['status'] }
+    ]
   });
   return Product;
 };

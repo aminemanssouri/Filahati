@@ -74,7 +74,17 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Message',
     tableName: 'Messages',
-    timestamps: true
+    timestamps: true,
+    indexes: [
+      // Index for retrieving messages by conversation
+      { name: 'messages_conversation_idx', fields: ['conversationId'] },
+      // Index for retrieving messages by sender
+      { name: 'messages_sender_idx', fields: ['senderId'] },
+      // Index for sorting by message time
+      { name: 'messages_sent_at_idx', fields: ['sentAt'] },
+      // Composite index for conversation + time - optimizes message history queries
+      { name: 'messages_conv_time_idx', fields: ['conversationId', 'sentAt'] }
+    ]
   });
   return Message;
 };
