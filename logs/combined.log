@@ -569,3 +569,92 @@
 {"level":"info","message":"Server running on port 50006 with PID: 16132","service":"filahati-api","timestamp":"2025-05-15 17:09:30"}
 {"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-15 17:09:30"}
 {"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-15 17:10:26","workerPids":[17368,10884,16752,6744,17324,16132,9624,10968]}
+{"level":"info","message":"Primary 16276 is running","service":"filahati-api","timestamp":"2025-05-16 12:00:05"}
+{"level":"info","message":"Setting up 8 workers...","service":"filahati-api","timestamp":"2025-05-16 12:00:05"}
+{"level":"info","message":"Worker 17864 started","service":"filahati-api","timestamp":"2025-05-16 12:00:05"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 17864","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Server running on port 50006 with PID: 17864","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Worker 9816 started","service":"filahati-api","timestamp":"2025-05-16 12:00:05"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 9816","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Server running on port 50002 with PID: 9816","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Worker 17756 started","service":"filahati-api","timestamp":"2025-05-16 12:00:05"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 17756","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Server running on port 50008 with PID: 17756","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Worker 14004 started","service":"filahati-api","timestamp":"2025-05-16 12:00:05"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 14004","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Server running on port 50007 with PID: 14004","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Worker 17984 started","service":"filahati-api","timestamp":"2025-05-16 12:00:05"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 17984","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Server running on port 50003 with PID: 17984","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Worker 6096 started","service":"filahati-api","timestamp":"2025-05-16 12:00:05"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 6096","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Server running on port 50001 with PID: 6096","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Worker 16284 started","service":"filahati-api","timestamp":"2025-05-16 12:00:05"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 16284","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Server running on port 50005 with PID: 16284","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Worker 12700 started","service":"filahati-api","timestamp":"2025-05-16 12:00:05"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 12700","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Server running on port 50004 with PID: 12700","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:00:08"}
+{"level":"info","message":"Primary 17968 is running","service":"filahati-api","timestamp":"2025-05-16 12:05:04"}
+{"level":"info","message":"Setting up 8 workers...","service":"filahati-api","timestamp":"2025-05-16 12:05:04"}
+{"level":"info","message":"Worker 14988 started","service":"filahati-api","timestamp":"2025-05-16 12:05:04"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 14988","service":"filahati-api","timestamp":"2025-05-16 12:05:06"}
+{"level":"info","message":"Server running on port 50001 with PID: 14988","service":"filahati-api","timestamp":"2025-05-16 12:05:06"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:05:06"}
+{"level":"info","message":"Worker 16340 started","service":"filahati-api","timestamp":"2025-05-16 12:05:04"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 16340","service":"filahati-api","timestamp":"2025-05-16 12:05:06"}
+{"level":"info","message":"Server running on port 50005 with PID: 16340","service":"filahati-api","timestamp":"2025-05-16 12:05:06"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:05:06"}
+{"level":"info","message":"Worker 19232 started","service":"filahati-api","timestamp":"2025-05-16 12:05:04"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 19232","service":"filahati-api","timestamp":"2025-05-16 12:05:06"}
+{"level":"info","message":"Server running on port 50004 with PID: 19232","service":"filahati-api","timestamp":"2025-05-16 12:05:06"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:05:07"}
+{"level":"info","message":"Worker 15472 started","service":"filahati-api","timestamp":"2025-05-16 12:05:04"}
+{"level":"info","message":"Worker 6156 started","service":"filahati-api","timestamp":"2025-05-16 12:05:04"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 15472","service":"filahati-api","timestamp":"2025-05-16 12:05:06"}
+{"level":"info","message":"Server running on port 50002 with PID: 15472","service":"filahati-api","timestamp":"2025-05-16 12:05:07"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:05:07"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 6156","service":"filahati-api","timestamp":"2025-05-16 12:05:06"}
+{"level":"info","message":"Server running on port 50007 with PID: 6156","service":"filahati-api","timestamp":"2025-05-16 12:05:07"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:05:07"}
+{"level":"info","message":"Worker 11212 started","service":"filahati-api","timestamp":"2025-05-16 12:05:04"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 11212","service":"filahati-api","timestamp":"2025-05-16 12:05:07"}
+{"level":"info","message":"Server running on port 50006 with PID: 11212","service":"filahati-api","timestamp":"2025-05-16 12:05:07"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:05:07"}
+{"level":"info","message":"Worker 16456 started","service":"filahati-api","timestamp":"2025-05-16 12:05:05"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 16456","service":"filahati-api","timestamp":"2025-05-16 12:05:07"}
+{"level":"info","message":"Server running on port 50003 with PID: 16456","service":"filahati-api","timestamp":"2025-05-16 12:05:07"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:05:07"}
+{"level":"info","message":"Worker 17844 started","service":"filahati-api","timestamp":"2025-05-16 12:05:05"}
+{"level":"info","message":"Setting up Socket.io IPC for worker 17844","service":"filahati-api","timestamp":"2025-05-16 12:05:07"}
+{"level":"info","message":"Server running on port 50008 with PID: 17844","service":"filahati-api","timestamp":"2025-05-16 12:05:07"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:05:07"}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-16 12:06:04","workerPids":[14988,15472,16456,19232,16340,11212,6156,17844]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-16 12:07:04","workerPids":[14988,15472,16456,19232,16340,11212,6156,17844]}
+{"expectedWorkers":8,"level":"info","message":"Cluster status: 8 active workers","service":"filahati-api","timestamp":"2025-05-16 12:08:04","workerPids":[14988,15472,16456,19232,16340,11212,6156,17844]}
+{"level":"info","message":"Server running on port 5000 with PID: 13812","service":"filahati-api","timestamp":"2025-05-16 12:12:05"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:12:05"}
+{"level":"info","message":"Server running on port 5000 with PID: 7512","service":"filahati-api","timestamp":"2025-05-16 12:15:13"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:15:13"}
+{"level":"info","message":"Server running on port 5001 with PID: 15504","service":"filahati-api","timestamp":"2025-05-16 12:18:17"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:18:17"}
+{"level":"info","message":"Server running on port 3000 with PID: 18716","service":"filahati-api","timestamp":"2025-05-16 12:18:57"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:18:57"}
+{"level":"info","message":"Server running on port 3000 with PID: 17232","service":"filahati-api","timestamp":"2025-05-16 12:20:56"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:20:56"}
+{"level":"info","message":"Server running on port 4000 with PID: 5604","service":"filahati-api","timestamp":"2025-05-16 12:22:47"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:22:47"}
+{"level":"info","message":"Server running on port 5000 with PID: 18816","service":"filahati-api","timestamp":"2025-05-16 12:23:52"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:23:52"}
+{"level":"info","message":"Server running on port 5000 with PID: 5020","service":"filahati-api","timestamp":"2025-05-16 12:40:10"}
+{"level":"info","message":"WebSocket server is running","service":"filahati-api","timestamp":"2025-05-16 12:40:10"}
+{"level":"info","message":"::1 - - [16/May/2025:11:40:40 +0000] \"POST /api/auth/login HTTP/1.1\" 200 130 \"-\" \"PostmanRuntime/7.43.4\"","service":"filahati-api","timestamp":"2025-05-16 12:40:40"}
+{"level":"info","message":"::1 - - [16/May/2025:11:41:37 +0000] \"GET /api/products/4 HTTP/1.1\" 200 2571 \"-\" \"PostmanRuntime/7.43.4\"","service":"filahati-api","timestamp":"2025-05-16 12:41:37"}

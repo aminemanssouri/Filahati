@@ -74,8 +74,8 @@ app.use('/api', apiRoutes);
 // Apply error handling middleware
 app.use(errorHandler);
 
-// Only start the server if we're in a worker process or not running in cluster mode
-if (!cluster.isPrimary || process.env.NODE_ENV === 'test' || process.env.PM2_PROCESS_NAME) {
+// Only start the server if we're in a worker process, not running in cluster mode, or running directly
+if (!cluster.isPrimary || process.env.NODE_ENV === 'test' || process.env.PM2_PROCESS_NAME || !process.env.CLUSTER_MODE) {
   // Start server
   server.listen(PORT, () => {
     logger.info(`Server running on port ${PORT} with PID: ${process.pid}`);
